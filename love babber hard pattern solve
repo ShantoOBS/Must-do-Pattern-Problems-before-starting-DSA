@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    
+    int i=1;
+    while(i<=n){
+        
+        //for left side number print
+         int count=1;
+         int leftnum=n-i+1;
+         while(leftnum){
+             cout<<count;
+             count++;
+             leftnum--;
+         }
+         //for left star print
+        int left=2;
+        while(left<=i){
+            cout<<"*";
+            left++;
+        }
+        //for right star print
+        int right=2;
+        while(right<=i){
+            cout<<"*";
+            right++;
+        }
+        
+        //for right number print
+         int rightnum=n-i+1;
+         while(rightnum){
+             cout<<rightnum;
+             rightnum--;
+         }
+ 
+         
+         
+         cout<<endl;
+         i++;
+    }
+}
+
